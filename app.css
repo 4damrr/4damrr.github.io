@@ -1,0 +1,207 @@
+* {
+    font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.custom-border {
+    border: 3px solid black;
+    border-radius: 0;
+}
+
+#mainNavbar {
+    background-color: #192650;
+}
+
+#home {
+    margin-top: 25px;
+    padding: 50px 15px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+#aboutText {
+    padding: 50px;
+    background-color: #1c488a;
+    color: white;
+    text-transform: uppercase;
+}
+
+#aboutGraphic {
+    background-color: #f2f2f2;
+}
+
+#aboutGraphic img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#duren:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#aboutGraphic img:last-child {
+    width: 100px;
+    height: 100px;
+}
+
+#what {
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#what .col {
+    white-space: nowrap;
+    animation-name: running;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#what .col p {
+    font-size: 5rem;
+}
+
+#frontEnd, #physics {
+    max-height: 500px;
+}
+
+#frontEndText, #physicsText {
+    padding: 100px;
+    text-transform: uppercase;
+}
+
+#frontEndText {
+    background-color: #feaf39;
+}
+
+#physicsText {
+    background-color: #1c488a;
+    color: white;
+}
+
+#frontEndText img, #physics img {
+    width: 50px;
+    height: 50px;
+}
+
+#frontEndIcon, #physicsIcon {
+    padding: 100px;
+    background-color: #f2f2f2;
+}
+
+#frontEndIcon h1, #physicsIcon h1 {
+    font-weight: bold;
+}
+
+#frontEndIcon h1:nth-child(odd) {
+    color: #feaf39;
+}
+
+#physicsIcon h1:nth-child(odd) {
+    color: #1c488a;
+}
+
+#portofolio {
+    background-color: #B80048;
+}
+
+#portofolio h1 {
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.fab {
+    font-size: 25px;
+    color: black;
+}
+
+footer {
+    background-color: #192650;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width:768px) {
+
+    /* border top */
+    #physicsText, #physicsIcon, #portofolio {
+        border-top: none;
+    }
+
+    /* border right */
+
+    /* border down */
+
+    /* border left */
+    #physicsText, #aboutText, #frontEndIcon {
+        border-left: none;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes running {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-50%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    75% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
